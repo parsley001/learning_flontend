@@ -1,0 +1,173 @@
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  background: #01558d;
+  color: white;
+}
+.menu li {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.animals {
+  width: 100%;
+  height: 200px;
+  background: #006993;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.animals .name {
+  color: white;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.animals2 {
+  width: 100%;
+  height: 200px;
+  background: #006993;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+.animals2 .name {
+  width: 80px;
+  height: 80px;
+  color: white;
+  border: solid 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule {
+  display: grid;
+  grid-template-areas:
+    "title title" /*グリッド生成*/
+    "time list";
+  grid-template-columns: 100px auto;
+}
+.schedule .title {
+  grid-area: title;
+  color: white;
+  background: #8e6f5c;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.schedule .time {
+  grid-area: time;
+  background: #4b697f;
+}
+.schedule img {
+  width: 100%;
+}
+.schedule .digital {
+  color: #8e6f5c;
+  background: #c2b185;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  text-align: center;
+}
+.schedule .list {
+  grid-area: list;
+  background: #dddddd;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 300px 300px 300px;
+}
+.album .title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background: #01558d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+#album1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#album2 {
+  grid-column-start: -3;
+  grid-column-end: -1;
+  grid-row-start: -2;
+  grid-row-end: -1;
+}
+.album img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paris {
+  position: relative;
+}
+.paris .place {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px 10px;
+}
+.paris .date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px 10px;
+}
+.paris img {
+  width: 100%;
+}
+
+.sheep {
+  position: fixed;
+  right: 40px;
+  bottom: 120px;
+  width: 80px;
+}
+.sheep img {
+  width: 100%;
+}
+
+.one {
+  position: sticky;
+  top: 0;
+  width: 60px;
+  background: #e4bcbc;
+}
+.two {
+  position: sticky;
+  top: 60px;
+  width: 120px;
+  background: #7183ac;
+}
+.three {
+  position: sticky;
+  top: 120px;
+  width: 180px;
+  background: #7183ac;
+}
+.one,
+.two,
+.three {
+  height: 60px;
+  margin: auto;
+  border-radius: 10px;
+}
+.space {
+  height: 150px;
+  border-top: solid 10px #cccccc;
+}
